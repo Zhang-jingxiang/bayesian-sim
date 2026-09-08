@@ -1,6 +1,6 @@
 # Orieux 2012 Bayesian SIM
 
-This is an independent reproduction and experimental codebase for the Bayesian structured illumination microscopy (Bayesian SIM) method proposed by Orieux et al. in their 2012 IEEE TIP paper. The project is intended for algorithm research and reproducible experiments. It remains research code; a denser reconstruction grid should not be directly interpreted as achieving an equivalent multiple of actual resolution improvement.
+This is an independent reproduction and experimental codebase for the Bayesian structured illumination microscopy (Bayesian SIM) method proposed by Orieux et al. in their 2012 IEEE TIP paper. The project is intended for algorithm research and reproducible experiments. 
 
 ## Implementation
 
