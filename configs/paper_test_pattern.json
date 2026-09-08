@@ -1,0 +1,33 @@
+{
+  "experiment": {
+    "mode": "simulation",
+    "name": "paper_test_pattern"
+  },
+  "input": {
+    "image_source": "synthetic_test_pattern",
+    "image_shape": [263, 263],
+    "intensity_scale": 255.0
+  },
+  "optics": {
+    "cutoff_frequency": 0.12,
+    "modulation_frequency": 0.12,
+    "orientations_deg": [-30.0, 30.0, 90.0],
+    "modulation_depth": 1.0,
+    "phase_deg": 0.0
+  },
+  "noise": {
+    "snr_db": 20.0,
+    "seed": 123,
+    "shared_precision": false
+  },
+  "sampler": {
+    "burn_in": 20,
+    "max_samples": 40,
+    "convergence_epsilon": 0.001,
+    "cg_rtol": 1e-6,
+    "cg_maxiter": 300
+  },
+  "output": {
+    "directory": "../results/paper_test_pattern"
+  }
+}

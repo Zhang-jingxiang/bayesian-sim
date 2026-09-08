@@ -1,0 +1,35 @@
+{
+  "experiment": {
+    "mode": "simulation",
+    "name": "sample1_512_sim9"
+  },
+  "input": {
+    "image_source": "path",
+    "image_path": "../data/sample1-512.tif",
+    "image_shape": [512, 512],
+    "intensity_scale": 255.0
+  },
+  "optics": {
+    "cutoff_frequency": 0.12,
+    "modulation_frequency": 0.12,
+    "orientations_deg": [-60.0, 0.0, 60.0],
+    "modulation_depth": 1.0,
+    "phase_degs": [0.0, 120.0, 240.0],
+    "include_widefield": false
+  },
+  "noise": {
+    "snr_db": 20.0,
+    "seed": 123,
+    "shared_precision": false
+  },
+  "sampler": {
+    "burn_in": 20,
+    "max_samples": 40,
+    "convergence_epsilon": 0.001,
+    "cg_rtol": 1e-6,
+    "cg_maxiter": 300
+  },
+  "output": {
+    "directory": "../results/sample1_512_sim9"
+  }
+}

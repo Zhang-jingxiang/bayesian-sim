@@ -1,0 +1,61 @@
+{
+  "experiment": {
+    "mode": "reconstruction",
+    "name": "cos7_first9_hr_background"
+  },
+  "input": {
+    "image_source": "path",
+    "measurement_stack_path": "../data/3-63倍1.47-cos7-pkmito-50mWb-50ms-3.35stripe-delay5s-49-first9.tif",
+    "image_shape": [512, 512],
+    "reconstruction_shape": [1024, 1024],
+    "measurement_sampling": "point_sample"
+  },
+  "optics": {
+    "cutoff_frequency": 0.2890625,
+    "otf_path": "../../../SIM4Expt/OTF.tif",
+    "modulation_depth": 0.32,
+    "include_widefield": false,
+    "frame_wavevectors_px": [
+      [93.09259796142578, -86.845703125],
+      [93.09259796142578, -86.845703125],
+      [93.09259796142578, -86.845703125],
+      [-26.722200393676758, -125.09259796142578],
+      [-26.722200393676758, -125.09259796142578],
+      [-26.722200393676758, -125.09259796142578],
+      [-121.78399658203125, -36.277801513671875],
+      [-121.78399658203125, -36.277801513671875],
+      [-121.78399658203125, -36.277801513671875]
+    ],
+    "frame_phases_rad": [
+      1.29807783846691,
+      -0.8248926829831328,
+      -2.90520117993519,
+      2.3308307249308635,
+      0.25637094119797244,
+      -1.7543493192433308,
+      -2.85030705443388,
+      1.3673463393115424,
+      -0.687898642931042
+    ]
+  },
+  "noise": {
+    "seed": 123,
+    "shared_precision": false
+  },
+  "background": {
+    "mode": "shared_smooth",
+    "smoothness_precision": 0.03,
+    "signal_mean_precision": 0.0007
+  },
+  "sampler": {
+    "burn_in": 20,
+    "max_samples": 40,
+    "convergence_epsilon": null,
+    "cg_rtol": 1e-6,
+    "cg_maxiter": 300,
+    "enforce_nonnegative_image": false
+  },
+  "output": {
+    "directory": "../results/cos7_first9_hr_background"
+  }
+}

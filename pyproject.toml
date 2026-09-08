@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orieux2012-bayesian-sim"
+version = "0.1.0"
+description = "Reproduction of Orieux et al. TIP 2012 Bayesian SIM"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "matplotlib",
+  "tifffile",
+  "scikit-image",
+]

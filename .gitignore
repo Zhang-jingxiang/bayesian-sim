@@ -1,0 +1,45 @@
+# Python bytecode and local caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Packaging and build artifacts
+.eggs/
+*.egg-info/
+build/
+dist/
+pip-wheel-metadata/
+wheelhouse/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and local run artifacts
+*.log
+graphify-out/
+results/
+
+# Local extracted paper materials
+2012_Bayesian_Estimation_for_Optimized_Structured_Illumination_Microscopy/

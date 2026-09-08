@@ -1,0 +1,55 @@
+{
+  "experiment": {
+    "mode": "reconstruction",
+    "name": "locksim_mito_real9"
+  },
+  "input": {
+    "image_source": "path",
+    "measurement_stack_path": "../../../data/2dsim/2025LockSIM/Mitochondria_LockinSIM_488nm_1.49NA_65nm.tif",
+    "image_shape": [512, 512],
+    "intensity_scale": 255.0
+  },
+  "optics": {
+    "cutoff_frequency": 0.2890625,
+    "otf_path": "../../../matrixfree4simrecon/data/OTF.tif",
+    "modulation_depth": 0.32,
+    "include_widefield": false,
+    "frame_wavevectors_px": [
+      [149.6688, -15.3525],
+      [149.6688, -15.3525],
+      [149.6688, -15.3525],
+      [61.6173, -137.2222],
+      [61.6173, -137.2222],
+      [61.6173, -137.2222],
+      [88.0412, 121.9902],
+      [88.0412, 121.9902],
+      [88.0412, 121.9902]
+    ],
+    "frame_phases_rad": [
+      -2.319772,
+      2.144018,
+      -0.225377,
+      -1.012918,
+      -3.107313,
+      1.081477,
+      -2.271197,
+      -0.176802,
+      1.917593
+    ]
+  },
+  "noise": {
+    "noise_std": 1.0,
+    "seed": 123,
+    "shared_precision": false
+  },
+  "sampler": {
+    "burn_in": 20,
+    "max_samples": 40,
+    "convergence_epsilon": 0.001,
+    "cg_rtol": 1e-6,
+    "cg_maxiter": 300
+  },
+  "output": {
+    "directory": "../results/locksim_mito_real9"
+  }
+}
